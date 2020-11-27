@@ -1,0 +1,8 @@
+@import './components/FriendList/FriendList.module.scss';
+@import './components/Profile/Profile.module.scss';
+@import './components/Statistics/Statistics.module.scss';
+@import './components/TransactionHistory/TransactionHistory.module.scss';
+
+body {
+  background-color: rgba(32, 33, 53, 0.842);
+}
