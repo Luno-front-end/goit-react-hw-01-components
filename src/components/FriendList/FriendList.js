@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 import Friends from './Friends'
 import s from './FriendList.module.css'
@@ -17,3 +19,11 @@ export default function FriendListItem({ friends }) {
     </ul>
   );
 }
+
+FriendListItem.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired
+    }),
+  ),
+};

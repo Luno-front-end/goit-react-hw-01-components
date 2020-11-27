@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 import s from './TransactionHistory.module.css'
 
@@ -11,3 +13,9 @@ export default function TransactionTablList({ type, amount, currency }) {
     </tr>
   );
 }
+
+TransactionTablList.propTypes = {
+    type: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired
+};

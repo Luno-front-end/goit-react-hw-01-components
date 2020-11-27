@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import TransactionTablList from './TransactionTablList'
 import s from './TransactionHistory.module.css'
@@ -27,3 +28,12 @@ export default function TransactionHistory({items}) {
 </table>
     )
 }
+
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired
+    }),
+  ),
+};
