@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(32, 33, 53, 0.842);
+}
+
 .profile {
   width: 300px;
   margin-top: 15px;

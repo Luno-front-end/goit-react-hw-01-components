@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import s from'./Profile.module.css'
 
-console.log(s)
-
 export default function Profile ({ name, tag, location, avatar, stats }) {
   return (
     <div className={s.profile}>
